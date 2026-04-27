@@ -8,7 +8,7 @@ import Analysis from '../models/Analysis.model.js';
 const callOpenRouter = (prompt) => {
     return new Promise((resolve, reject) => {
         const body = JSON.stringify({
-            model: 'google/gemma-3-12b-it:free',
+            model: 'deepseek/deepseek-chat-v3-0324:free',
             messages: [{ role: 'user', content: prompt }],
             max_tokens: 4000,
             temperature: 0.3,
